@@ -1,3 +1,142 @@
-h1 {
-    color: red;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.FirstPage {
+    min-height: 100vh;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    }
+
+    section {
+        min-height: 100vh;
+        background: white;
+    }
+
+/*header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+}
+header.sticky.logo,
+header.sticky ul li a {
+    color: #000;
+}*/
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+
+.NoahKuonen {
+  position: relative;  
+
+  
+
+}
+
+.NoahKuonen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right:0 ;
+    width: 3px;
+    height: 100%;
+    background: rgb(12, 176, 197);
+    animation: blinkCursor 0.8s steps(3) infinite;
+
+}
+
+@keyframes blinkCursor
+{
+    0%, 75%
+    {
+        opacity: 1;
+    }
+    76%, 100%
+    {
+        opacity: 0;
+    }
+}
+
+.NoahKuonen h2 {
+    position: relative;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    font-size: 4em;
+    text-transform: uppercase;
+    animation: typing 12s steps(22) infinite;
+    overflow: hidden;
+}
+
+@keyframes typing
+{
+    0%, 90%, 100%
+    {
+        width: 0;
+    }
+    30%, 60%
+    {
+        width: 917.41px;
+    }
+}
+
+span {
+    position: absolute;
+    background: rgb(12, 176, 197);
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    border-radius: 50%;
 }
