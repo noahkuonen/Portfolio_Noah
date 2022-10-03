@@ -1,13 +1,23 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+body {
+    min-height: 100vh;
+    background: #001f25;
+ 
 }
 
 
 .FirstPage {
     min-height: 100vh;
-    background: #001f25;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +28,7 @@
 
 section {
     min-height: 100vh;
-    background: #001f25;
+    background: #f5f5f5;
     /*height: 100vh;
     width: 100%;
     background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
@@ -109,3 +119,9 @@ section {
         background-position: 0 50%;
     }
 }
+
+.dark-mode {
+    background-color: rgb(225, 222, 222);
+    color: #001f25;
+}
+    
