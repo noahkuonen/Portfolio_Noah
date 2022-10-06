@@ -28,8 +28,6 @@ function typingFrontPage() {
   });
 }
 
-/*Effect to Title Chapter 3 Skills*/
-
 /*Card Tilt effect Chapter 3 Skills*/
 function addEffecTiltToCard() {
   VanillaTilt.init(document.querySelectorAll(".card"), {
@@ -43,4 +41,5 @@ function addEffecTiltToCard() {
 window.onload = () => {
   typingFrontPage();
   addEffecTiltToCard();
+  scrollHandler();
 };
