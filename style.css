@@ -329,6 +329,12 @@ img {
   color: #c5c6c7;
 }
 
+/*Fourth Chapter CV*/
+.CV {
+  display: flex;
+  min-height: 100vh;
+}
+
 /* old design
 .NoahKuonen {
   position: relative; 
@@ -389,3 +395,41 @@ span {
     pointer-events: none;
     border-radius: 50%;
 } */
+
+.Focus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.FocusHover {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  color: #c5c6c7;
+  font-size: 3.5em;
+  cursor: pointer;
+}
+
+.FocusHover span {
+  position: relative;
+  filter: blur(5px);
+  padding: 0 5px;
+  transition: 0.5s;
+}
+
+.FocusHover span:hover {
+  filter: blur(0px);
+  transition: 0s;
+  color: #66fcf1;
+}
+
+.FocusHover span:hover::after {
+  color: #66fcf1;
+}
+
+.FocusHover span i {
+  position: absolute;
+  inset: 0;
+}
