@@ -12,10 +12,7 @@ function scrollHandler(e) {
   const line = qs(".line");
   console.log(line);
   line.style.bottom = `calc(100% - 20px)`;
-
-  console.log(line);
-  line.style.bottom = `calc(100% - 20px)`;
-
+  line.style.display = "block";
   const targetY = window.innerHeight * 0.8;
   let prevScrollY = window.scrollY;
   let up, down;
@@ -52,6 +49,4 @@ function scrollHandler(e) {
   prevScrollY = window.scrollY;
 }
 
-scrollHandler();
-line.style.display = "block";
 window.addEventListener("scroll", scrollHandler);

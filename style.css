@@ -354,12 +354,12 @@ img {
 
 .line {
   position: absolute;
-  z-index: 2;
   left: calc(50% - 1px);
   width: 2px;
   top: -50px;
   bottom: -50px;
   background-color: #c5c6c7;
+  display: none;
 }
 
 .line::before,
@@ -412,6 +412,8 @@ img {
 
 .contentCV {
   width: calc(50% - 2rem);
+  background: transparent;
+  color: #c5c6c7;
 }
 
 .show-me:nth-child(n) {
