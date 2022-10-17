@@ -75,7 +75,6 @@ function ToggleIcon(x) {
 window.onload = () => {
   typingFrontPage();
   addEffecTiltToCard();
-  scrollHandler();
   DarkMode();
   ToggleIcon();
 };
