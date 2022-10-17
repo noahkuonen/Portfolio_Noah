@@ -9,7 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="timeline.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -183,7 +184,7 @@
       <div class="CV" , id="CV">
         <div class="timeline">
           <div class="line"></div>
-          <div class="section">
+          <div class="section" data-aos="fade-down-right">
             <div class="point"></div>
             <div class="contentCV">
               <h2>Secondary School</h2>
@@ -191,7 +192,7 @@
             </div>
           </div>
           <div class="line"></div>
-          <div class="section">
+          <div class="section" data-aos="fade-down-left">
             <div class="point"></div>
             <div class="contentCV">
               <h2>KSSB Sport School</h2>
@@ -199,7 +200,7 @@
             </div>
           </div>
           <div class="line"></div>
-          <div class="section">
+          <div class="section" data-aos="fade-down-right">
             <div class="point"></div>
             <div class="contentCV">
               <h2>Kaufmann EFZ</h2>
@@ -207,7 +208,7 @@
             </div>
           </div>
           <div class="line"></div>
-          <div class="section">
+          <div class="section" data-aos="fade-down-left">
             <div class="point"></div>
             <div class="contentCV">
               <h2>Professional Year Golf</h2>
@@ -215,16 +216,16 @@
             </div>
           </div>
           <div class="line"></div>
-          <div class="section">
+          <div data-aos="fade-down-right" class="section">
             <div class="point"></div>
             <div class="contentCV">
-              <h2>Customer Advisor Credit Suisse AG</h2>
+              <h2>Customer Advisor <br />Credit Suisse AG</h2>
               <p>2018 - 2020</p>
             </div>
           </div>
 
           <div class="line"></div>
-          <div class="section">
+          <div class="section" data-aos="fade-down-left">
             <div class="point"></div>
             <div class="contentCV">
               <h2>Part Time <br />Berufsmaturität</h2>
@@ -233,7 +234,7 @@
           </div>
 
           <div class="line"></div>
-          <div class="section">
+          <div class="section" data-aos="fade-down-right" style="border: solid">
             <div class="point"></div>
             <div class="contentCV">
               <h2>
@@ -247,5 +248,8 @@
         </div>
       </div>
     </div>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
