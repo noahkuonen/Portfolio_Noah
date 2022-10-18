@@ -1,0 +1,21 @@
+.FirstPage {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/*Welcome Typing*/
+.Typing {
+  position: relative;
+  /*color: rgb(12, 176, 197);*/
+  /*color: #66fcf1;*/
+  /*color: #d9b08c;*/
+  letter-spacing: 5px;
+  font-size: 2.8em;
+  font-family: "Poppins";
+  text-align: center;
+}
+.Typing h2 {
+  -webkit-box-reflect: below -28px linear-gradient(transparent, #0002);
+}
