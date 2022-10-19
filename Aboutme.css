@@ -18,8 +18,9 @@
   width: 400px;
   height: 400px;
   background-image: url(../Images/IMG_9544.PNG);
-  background-position: center top;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 41% 59% 31% 69% / 51% 72% 28% 49%;
   animation: wobble 10s ease-in-out alternate infinite;
   box-shadow: 2px 14px 28px -10px rgba(0, 0, 0, 0.7);
