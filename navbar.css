@@ -13,7 +13,40 @@ nav a {
   text-decoration: none;
   margin: 0px 20px;
   font-size: 1.2em;
-  font-family: "Poppins";
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
 }
 
 /*Hover Navbar*/
