@@ -12,6 +12,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="FrontPage.css" />
+    <link rel="stylesheet" href="Aboutme.css" />
+    <link rel="stylesheet" href="CV.css" />
+    <link rel="stylesheet" href="Skills.css" />
+    <link rel="stylesheet" href="Contact.css" />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -20,21 +26,29 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
     <!--Navigation Menu-->
-
-    <nav>
-      <a href="#FirstPage" data-replace="Home"><span>Home</span></a>
-      <a href="#Aboutme" data-replace="About me"><span>About me</span></a>
-      <a href="#Skills" data-replace="Skills"><span>Skills</span></a>
-      <a href="#CV" data-replace="CV"><span>CV</span></a>
-      <a href="#" data-replace="Contact"><span>Contact</span></a>
-      <button class="btn-toggle">
-        <i onclick="ToggleIcon(this)" class="uil uil-sun"></i>
-      </button>
-    </nav>
+    <div class="topnav" id="myTopnav">
+      <nav>
+        <a href="#FirstPage" data-replace="Home"><span>Home</span></a>
+        <a href="#Aboutme" data-replace="About me"><span>About me</span></a>
+        <a href="#Skills" data-replace="Skills"><span>Skills</span></a>
+        <a href="#CV" data-replace="CV"><span>CV</span></a>
+        <a href="#Contact" data-replace="Contact"><span>Contact</span></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <button class="btn-toggle">
+          <i onclick="ToggleIcon(this)" class="uil uil-sun"></i>
+        </button>
+      </nav>
+    </div>
 
     <!--Floating Symbols-->
     <div class="symbols">
@@ -73,19 +87,24 @@
           <span><i></i>e</span>
         </h2>
       </div>
-      <div class="leftdiv">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis
-          suscipit velit consequatur, quaerat odit dolores ad a sit vel? Ullam
-          mollitia cum corporis explicabo eligendi ea maxime exercitationem
-          dolorem doloribus molestias, ex distinctio sed voluptates labore
-          quaerat sequi odio totam inventore quos sunt debitis! Sint facere
-          soluta ipsa qui!
-        </p>
-      </div>
+      <div class="aufteilung">
+        <div class="leftdiv">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+            corporis suscipit velit consequatur, quaerat odit dolores ad a sit
+            vel? Ullam mollitia cum corporis explicabo eligendi ea maxime
+            exercitationem dolorem doloribus molestias, ex distinctio sed
+            voluptates labore quaerat sequi odio totam inventore quos sunt
+            debitis! Sint facere soluta ipsa qui!
+          </p>
+        </div>
 
-      <div class="rightdiv">
-        <img src="../Images/" alt="" />
+        <div class="rightdiv">
+          <!--<figure>
+          <img class="Portrait" src="../Images/Noah_Portfolio.PNG" alt="Noah" />
+        </figure>-->
+          <div class="blob-wobble"></div>
+        </div>
       </div>
     </div>
 
@@ -234,7 +253,7 @@
           </div>
 
           <div class="line"></div>
-          <div class="section" data-aos="fade-down-right" style="border: solid">
+          <div class="section" data-aos="fade-down-right">
             <div class="point"></div>
             <div class="contentCV">
               <h2>
@@ -248,6 +267,71 @@
         </div>
       </div>
     </div>
+
+    <div class="Contact" , id="Contact">
+      <div class="Focus">
+        <h2 class="FocusHover">
+          <span><i></i>C</span>
+          <span><i></i>o</span>
+          <span><i></i>n</span>
+          <span><i></i>t</span>
+          <span><i></i>a</span>
+          <span><i></i>c</span>
+          <span><i></i>t</span>
+        </h2>
+      </div>
+
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value="e5aad7d6-a110-4920-a262-04603f127649"
+        />
+
+        <!-- Optional: Subject an be prefilled using type="hidden"
+             or type="text" for normal user submitted input -->
+        <input
+          type="hidden"
+          name="subject"
+          value="New Submission from Web3Forms"
+        />
+
+        <!-- Optional: From Name you want to see in the email
+             Default is "Notifications". you can overwrite here -->
+        <input type="hidden" name="from_name" value="Your Website Name" />
+
+        <!-- Optional: Default replyto will be "email" (if available)
+             you may overwrite replyto with different email here -->
+        <input type="hidden" name="replyto" value="customer@example.com" />
+
+        <!-- Required: If submitting form without Javascript.
+             Default web3forms output is in JSON format. -->
+        <!-- Not Required: If javascript, use "window.location.hash" instead -->
+        <input
+          type="hidden"
+          name="redirect"
+          value="https://web3forms.com/success"
+        />
+
+        <!-- Optional: But Recommended: To Prevent SPAM Submission.
+             Make sure its hidden by default -->
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
+
+        <!-- Custom Form Data: Form data you wish to receive in email. -->
+        <input type="email" name="email" required />
+        <input type="text" name="First Name" required />
+        <input type="text" name="Phone Number" required />
+        <textarea name="message" required></textarea>
+
+        <button type="submit">Submit Form</button>
+      </form>
+    </div>
+
     <script>
       AOS.init();
     </script>
