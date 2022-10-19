@@ -67,9 +67,22 @@ function addEffecTiltToCard() {
   });
 }
 
+/*Toggle Icon Dark Mode*/
+
 function ToggleIcon(x) {
   x.classList.toggle("uil-moon");
   x.classList.toggle("uil-sun");
+}
+
+/*Responsive Navbar*/
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 
 window.onload = () => {
@@ -77,4 +90,5 @@ window.onload = () => {
   addEffecTiltToCard();
   DarkMode();
   ToggleIcon();
+  myFunction();
 };
