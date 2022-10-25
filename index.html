@@ -170,7 +170,7 @@
         </div>
         <div class="card">
           <div class="content">
-            <h2><img src="Images\Rstudio.png" /></h2>
+            <h2><img src="Images\RStudio.png" /></h2>
             <h2>RStudio</h2>
           </div>
         </div>
@@ -268,6 +268,9 @@
       </div>
     </div>
 
+
+    <!--Contact 4 Chapter-->
+
     <div class="Contact" , id="Contact">
       <div class="Focus">
         <h2 class="FocusHover">
@@ -285,24 +288,9 @@
         <input
           type="hidden"
           name="access_key"
-          value="e5aad7d6-a110-4920-a262-04603f127649"
+          value="0540c052-c588-44ee-9cde-b29847d30dc3"
         />
 
-        <!-- Optional: Subject an be prefilled using type="hidden"
-             or type="text" for normal user submitted input -->
-        <input
-          type="hidden"
-          name="subject"
-          value="New Submission from Web3Forms"
-        />
-
-        <!-- Optional: From Name you want to see in the email
-             Default is "Notifications". you can overwrite here -->
-        <input type="hidden" name="from_name" value="Your Website Name" />
-
-        <!-- Optional: Default replyto will be "email" (if available)
-             you may overwrite replyto with different email here -->
-        <input type="hidden" name="replyto" value="customer@example.com" />
 
         <!-- Required: If submitting form without Javascript.
              Default web3forms output is in JSON format. -->
@@ -323,15 +311,60 @@
         />
 
         <!-- Custom Form Data: Form data you wish to receive in email. -->
-        <input type="email" name="email" required />
-        <input type="text" name="First Name" required />
-        <input type="text" name="Phone Number" required />
-        <textarea name="message" required></textarea>
+        <div class="form-wrapper">
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="name">name<span class="star">*</span></label>
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject"
+                >subject&nbsp;<span class="optional">(optional)</span></label
+              >
+              <input
+                type="text"
+                id="subject"
+                class="form-control"
+                placeholder="Enter your subject"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">email<span class="star">*</span></label>
+                    <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">message<span class="star">*</span></label>
+              <textarea
+                id="message"
+                class="form-control"
+                placeholder="Your message here..."
+                required
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
 
-        <button type="submit">Submit Form</button>
-      </form>
+            <button class="submit-btn">send message</button>
+      
+            </form>
+          </form>
+
     </div>
-
+    <footer>
+      <p>das ist mein Name</p>
+    </footer>
     <script>
       AOS.init();
     </script>
