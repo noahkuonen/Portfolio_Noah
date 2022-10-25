@@ -49,6 +49,18 @@ nav a {
   }
 }
 
+@media screen and (max-width: 800px) {
+  nav {
+    padding: 25px;
+    text-align: right;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: #45a29e;
+    z-index: 10;
+  }
+}
 /*Hover Navbar*/
 
 a {
