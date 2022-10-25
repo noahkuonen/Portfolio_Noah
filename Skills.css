@@ -1,6 +1,7 @@
 .Skills {
   scroll-margin: 7em;
-  min-height: 100vh;
+  min-height: auto;
+  margin-bottom: 50px;
 }
 .container {
   position: relative;
