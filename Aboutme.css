@@ -1,5 +1,5 @@
 .Aboutme {
-  min-height: 80vh;
+  min-height: auto;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -15,9 +15,11 @@
 
 .blob-wobble {
   position: relative;
+  top: auto;
   width: 400px;
   height: 400px;
-  background-image: url(Images/IMG_9544.PNG);
+  background-color: rgb(197, 174, 146);
+  background-image: url(Images/NoahPortfolio1.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -26,6 +28,10 @@
   box-shadow: 2px 14px 28px -10px rgba(0, 0, 0, 0.7);
   z-index: 2;
   flex-wrap: wrap;
+}
+
+.blob-wobble:hover {
+  box-shadow: 2px 14px 28px -10px #66fcf1;
 }
 
 /* CSS to animate the blob */
