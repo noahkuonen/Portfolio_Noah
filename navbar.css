@@ -57,10 +57,11 @@ nav a {
     position: fixed;
     top: 0px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    background: #45a29e;
+    background: #374351;
     z-index: 10;
   }
 }
+
 /*Hover Navbar*/
 
 a {
