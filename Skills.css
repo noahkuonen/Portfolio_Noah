@@ -60,3 +60,9 @@ img {
   font-size: 1.8em;
   color: #c5c6c7;
 }
+
+@media screen and (max-width: 800px) {
+  .content {
+    transition: unset;
+  }
+}
