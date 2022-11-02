@@ -50,30 +50,6 @@
   width: 50%;
 }
 
-/* The circles on the timeline */
-
-.containerCV::after {
-  content: "";
-
-  position: absolute;
-
-  width: 25px;
-
-  height: 25px;
-
-  right: -17px;
-
-  background-color: white;
-
-  border: 4px solid;
-
-  top: 15px;
-
-  border-radius: 50%;
-
-  z-index: 1;
-}
-
 /* Place the container to the left */
 
 .left {
