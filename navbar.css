@@ -111,3 +111,53 @@ a span {
 a:hover span {
   transform: translate3d(-200%, 0, 0);
 }
+
+@media screen and (max-width: 800px) {
+  a {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+
+  a::before,
+  a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  a::before {
+    background-color: transparent;
+    height: 2px;
+    bottom: 0;
+    transform-origin: unset;
+    transform: unset;
+    transition: unset;
+  }
+  a::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: unset;
+    transform: unset;
+    transition: unset;
+    color: transparent;
+  }
+
+  a:hover::before {
+    transform-origin: unset;
+    transform: unset;
+  }
+  a:hover::after {
+    transform: unset;
+  }
+
+  a span {
+    display: inline-block;
+    transition: unset;
+  }
+
+  a:hover span {
+    transform: unset;
+  }
+}
