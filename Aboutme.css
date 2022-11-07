@@ -5,6 +5,12 @@
   align-items: center;
   scroll-margin: 7em;
   flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.TextAboutme {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: left;
 }
 
 .aufteilung {
@@ -65,14 +71,63 @@
 }
 
 .leftdiv {
+  padding: 35px;
   justify-content: center;
   text-align: center;
   left: 0px;
   width: 800px;
+  margin-top: 50px;
+  backdrop-filter: blur(10px);
+  box-shadow: 10px 14px 30px -10px rgba(121, 241, 241, 0.5);
 }
 .rightdiv {
   justify-content: center;
   position: relative;
   right: 0px;
   width: 400px;
+  margin-top: 50px;
+}
+
+/*Image*/
+.bottomdiv {
+  margin-top: 100px;
+  margin-bottom: -50px;
+  min-height: auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.PhotoStack .Impressions {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  box-shadow: 2px 2px 10px rgba(121, 241, 241, 0.5);
+  background-color: rgb(59, 78, 86);
+  border-radius: 2px;
+}
+
+.PhotoStack {
+  margin-top: -100px;
+  position: sticky;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.PhotoStack:nth-child(1) img {
+  transform: rotate(10deg);
+}
+.PhotoStack:nth-child(2) img {
+  transform: rotate(0deg);
+}
+.PhotoStack:nth-child(3) img {
+  transform: rotate(-10deg);
+}
+.PhotoStack:nth-child(4) img {
+  transform: rotate(3deg);
+}
+.PhotoStack:nth-child(5) img {
+  transform: rotate(-3deg);
 }
