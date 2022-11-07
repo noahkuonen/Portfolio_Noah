@@ -50,13 +50,16 @@ function DarkMode() {
 /*Typing Front Page */
 function typingFrontPage() {
   typed = new Typed(".auto-type", {
-    strings: ["Welcome to my Portfolio Page", "I'm Noah Kuonen"],
+    strings: [
+      "Welcome to my Portfolio Page",
+      "I'm Noah Kuonen",
+      "Scroll for more :)",
+    ],
     typeSpeed: 60,
     backSpeed: 60,
     loop: true,
   });
 }
-
 /*Card Tilt effect Chapter 3 Skills*/
 function addEffecTiltToCard() {
   VanillaTilt.init(document.querySelectorAll(".card"), {
