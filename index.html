@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="CV.css" />
     <link rel="stylesheet" href="Skills.css" />
     <link rel="stylesheet" href="Contact.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -89,13 +90,16 @@
       </div>
       <div class="aufteilung">
         <div class="leftdiv">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-            corporis suscipit velit consequatur, quaerat odit dolores ad a sit
-            vel? Ullam mollitia cum corporis explicabo eligendi ea maxime
-            exercitationem dolorem doloribus molestias, ex distinctio sed
-            voluptates labore quaerat sequi odio totam inventore quos sunt
-            debitis! Sint facere soluta ipsa qui!
+          <p class="TextAboutme">
+            At the moment I am in the last year of my bachelor of science degree
+            in Business Information Technology. My Major will be in Business
+            Data Analysis and my Minor in Project Management. <br />
+            <br />
+            I am a passionate person who pursues his dreams and is very
+            discipline. I am open and very direct and I like to be in contact
+            with people.<br />
+            <br />
+            Below you can see a few impressions of what I love!
           </p>
         </div>
 
@@ -104,6 +108,24 @@
           <img class="Portrait" src="../Images/Noah_Portfolio.PNG" alt="Noah" />
         </figure>-->
           <div class="blob-wobble"></div>
+        </div>
+        <div class="bottomdiv">
+          <div class="PhotoStack">
+            <img class="Impressions" src="Images/Crossfit.jpg" alt="" />
+          </div>
+
+          <div class="PhotoStack">
+            <img class="Impressions" src="Images/Ferien.jpg" alt="" />
+          </div>
+          <div class="PhotoStack">
+            <img class="Impressions" src="Images/bros.jpg" alt="" />
+          </div>
+          <div class="PhotoStack">
+            <img class="Impressions" src="Images/vicky.jpg" alt="" />
+          </div>
+          <div class="PhotoStack">
+            <img class="Impressions" src="Images/Lara.jpg" alt="" />
+          </div>
         </div>
       </div>
     </div>
@@ -120,6 +142,7 @@
           <span><i></i>s</span>
         </h2>
       </div>
+
       <div class="container">
         <div class="card">
           <div class="content">
@@ -205,51 +228,51 @@
       <div class="timeline">
         <div class="containerCV left" data-aos="fade-right">
           <div class="contentCV">
-            <h2>Secondary School</h2>
-            <h3>OS Brig-Glis</h3>
+            <h2 class="Title1">Secondary School</h2>
+            <h3 class="Title2">OS Brig-Glis</h3>
 
-            <p>2010 - 2012</p>
+            <p class="Title3">2010 - 2012</p>
           </div>
         </div>
 
         <div class="containerCV right" data-aos="fade-left">
           <div class="contentCV">
-            <h2>KSSB Sport School</h2>
+            <h2 class="Title1">KSSB Sport School</h2>
 
-            <p>2013</p>
+            <p class="Title3">2013</p>
           </div>
         </div>
 
         <div class="containerCV left" left data-aos="fade-right">
           <div class="contentCV">
-            <h2>Kaufmann EFZ</h2>
+            <h2 class="Title1">Kaufmann EFZ</h2>
 
-            <p>2014 - 2017</p>
+            <p class="Title3">2014 - 2017</p>
           </div>
         </div>
 
         <div class="containerCV right" data-aos="fade-left">
           <div class="contentCV">
-            <h2>Customer Advisor Credit Suisse AG</h2>
+            <h2 class="Title1">Customer Advisor Credit Suisse AG</h2>
 
-            <p>2018 - 2020</p>
+            <p class="Title3">2018 - 2020</p>
           </div>
         </div>
         <div class="containerCV left" data-aos="fade-right">
           <div class="contentCV">
-            <h2>Part Time Berufsmaturität</h2>
+            <h2 class="Title1">Part Time Berufsmaturität</h2>
 
-            <p>2019 - 2020</p>
+            <p class="Title3">2019 - 2020</p>
           </div>
         </div>
       </div>
 
       <div class="containerCV right" data-aos="fade-left">
         <div class="contentCV">
-          <h2>Bachelor of Science</h2>
-          <h3>Business Information Technology</h3>
+          <h2 class="Title1">Bachelor of Science</h2>
+          <h3 class="Title2">Business Information Technology</h3>
 
-          <p>2020 - 2023</p>
+          <p class="Title3">2020 - 2023</p>
         </div>
       </div>
     </div>
@@ -277,14 +300,16 @@
             value="0540c052-c588-44ee-9cde-b29847d30dc3"
           />
 
-          <!-- Required: If submitting form without Javascript.
-               Default web3forms output is in JSON format. -->
-          <!-- Not Required: If javascript, use "window.location.hash" instead -->
+          <!-- <input type="text" name="name" required />
+          <input type="email" name="email" required />
+          <textarea name="message" required></textarea>
           <input
             type="hidden"
             name="redirect"
             value="https://web3forms.com/success"
-          />
+          /> 
+
+          <button type="submit">Submit Form</button> das stylen das Nachricht funktioniert-->
 
           <!-- Custom Form Data: Form data you wish to receive in email. -->
           <div class="form-wrapper">
@@ -343,8 +368,10 @@
       AOS.init();
     </script>
 
-    <div class="MyFooter">
-      <footer></footer>
-    </div>
+    <footer id="footer">
+      <div class="FooterPosition">
+        <p class="FooterText">Made with ❤️ by Noah Kuonen</p>
+      </div>
+    </footer>
   </body>
 </html>
