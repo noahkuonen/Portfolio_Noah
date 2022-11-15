@@ -113,7 +113,6 @@
           <div class="PhotoStack">
             <img class="Impressions" src="Images/Crossfit.jpg" alt="" />
           </div>
-
           <div class="PhotoStack">
             <img class="Impressions" src="Images/Ferien.jpg" alt="" />
           </div>
@@ -318,6 +317,7 @@
                 <label for="name">name<span class="star">*</span></label>
                 <input
                   type="text"
+                  name="name"
                   id="name"
                   class="form-control"
                   placeholder="Enter your name"
@@ -339,6 +339,7 @@
                 <label for="email">email<span class="star">*</span></label>
                 <input
                   type="email"
+                  name="email"
                   id="email"
                   class="form-control"
                   placeholder="Enter your email"
@@ -348,12 +349,14 @@
               <div class="form-group">
                 <label for="message">message<span class="star">*</span></label>
                 <textarea
+                  name="message"
                   id="message"
                   class="form-control"
                   placeholder="Your message here..."
                   required
                   cols="30"
                   rows="10"
+                  required
                 ></textarea>
               </div>
 
