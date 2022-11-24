@@ -11,7 +11,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+html::-webkit-scrollbar {
+  display: none;
+}
 /*Scrollbar
 body::-webkit-scrollbar {
   background-color: rgb(203, 203, 203);
