@@ -98,8 +98,8 @@
 /*Images*/
 .bottomdiv {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
   margin-top: 100px;
   margin-bottom: -50px;
   min-height: auto;
