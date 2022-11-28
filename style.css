@@ -14,19 +14,6 @@ html {
 html::-webkit-scrollbar {
   display: none;
 }
-/*Scrollbar
-body::-webkit-scrollbar {
-  background-color: rgb(203, 203, 203);
-}
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(121, 241, 241, 0.5);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #66fcf1;
-  border-radius: 10px;
-  box-shadow: inset 0 0 10px;
-} /*
 
 /*Dark Mode*/
 
