@@ -105,7 +105,7 @@
   align-items: center;
 }
 .PhotoStack .Impressions {
-  width: 50vw;
+  width: 45vw;
   height: auto;
   box-shadow: 5px 5px 10px rgba(121, 241, 241, 0.5);
   background-color: rgb(59, 78, 86);
@@ -137,4 +137,15 @@
 }
 .PhotoStack:nth-child(5) img {
   transform: rotate(-3deg);
+}
+
+@media screen and (max-width: 800px) {
+  .PhotoStack .Impressions {
+    width: 70vw;
+    height: auto;
+    box-shadow: 5px 5px 10px rgba(121, 241, 241, 0.5);
+    background-color: rgb(59, 78, 86);
+    border-radius: 2px;
+    padding: unset;
+  }
 }
