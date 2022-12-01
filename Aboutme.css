@@ -79,7 +79,7 @@
   text-align: center;
   left: 0px;
   width: 800px;
-  height: auto;
+  height: 365px;
   margin-top: 50px;
   backdrop-filter: blur(10px);
   box-shadow: 10px 14px 30px -10px rgba(121, 241, 241, 0.5);
@@ -147,5 +147,65 @@
     background-color: rgb(59, 78, 86);
     border-radius: 2px;
     padding: unset;
+  }
+}
+
+@media screen and (min-width: 2150px) {
+  .PhotoStack .Impressions {
+    width: 30vw;
+    height: auto;
+    box-shadow: 5px 5px 10px rgba(121, 241, 241, 0.5);
+    background-color: rgb(59, 78, 86);
+    border-radius: 2px;
+    padding: unset;
+  }
+
+  .bottomdiv {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    min-height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blob-wobble {
+    position: relative;
+    top: auto;
+    width: 500px;
+    height: 800px;
+    background-color: rgb(197, 174, 146);
+    background-image: url(Images/NoahPortfolio1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 41% 59% 31% 69% / 51% 72% 28% 49%;
+    animation: wobble 10s ease-in-out alternate infinite;
+    box-shadow: 2px 14px 28px -10px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    flex-wrap: wrap;
+  }
+
+  .leftdiv {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 35px;
+    justify-content: center;
+    text-align: center;
+    left: 0px;
+    width: 1000px;
+    height: 750px;
+    margin-top: 50px;
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 14px 30px -10px rgba(121, 241, 241, 0.5);
+  }
+
+  .TextAboutme {
+    font-size: 2.5em;
+    font-weight: 500;
+    text-align: left;
   }
 }
