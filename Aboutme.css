@@ -79,7 +79,7 @@
   text-align: center;
   left: 0px;
   width: 800px;
-  height: 365px;
+  height: auto;
   margin-top: 50px;
   backdrop-filter: blur(10px);
   box-shadow: 10px 14px 30px -10px rgba(121, 241, 241, 0.5);
@@ -175,7 +175,7 @@
     position: relative;
     top: auto;
     width: 500px;
-    height: 800px;
+    height: 650px;
     background-color: rgb(197, 174, 146);
     background-image: url(Images/NoahPortfolio1.png);
     background-size: contain;
@@ -197,14 +197,14 @@
     text-align: center;
     left: 0px;
     width: 1000px;
-    height: 750px;
+    height: 650px;
     margin-top: 50px;
     backdrop-filter: blur(10px);
     box-shadow: 10px 14px 30px -10px rgba(121, 241, 241, 0.5);
   }
 
   .TextAboutme {
-    font-size: 2.5em;
+    font-size: 2.3em;
     font-weight: 500;
     text-align: left;
   }
